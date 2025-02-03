@@ -1,3 +1,5 @@
+//Reading characters from the input, printing those characters,
+
 import java.io.*;
 class Main
 {
