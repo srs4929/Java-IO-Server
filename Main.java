@@ -1,21 +1,19 @@
-//Reading characters from the input, printing those characters,
-
 import java.io.*;
 class Main
 {
     public static void main(String[] args) throws IOException
     {
-        char c;
+        String c;
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-               // Reading the character from keyboard
+               // Reading the string from keyboard
         
-        System.out.println("Enter the character and for quit give q")   ;    
+        System.out.println("Enter the string and for 'stop' to give quit")   ;    
         do
         {
-            c=(char)br.read(); //read the character
+            c=br.readLine(); //readLine() reads string
             System.out.println(c);
 
-        } while(c!='q') ;     
+        } while(!c.equals("stop")) ;     
     }
 }
 
